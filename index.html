@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Task</title>
+        <link href="./style.css" rel="stylesheet" type = "text/css">   
+    </head>
+    <body>
+        <video autoplay muted loop class = "bgcolor">
+            <source src= "./Video/background.mp4" type = "video/mp4"/>
+        </video>
+        <h1 class = "headline">Калькулятор двох чисел</h1>
+        <form id = "main-form"  method="post">
+            <div class = "form">
+                <p class = "paragraph">Введiть числа <b>Num1</b> та <b>Num2</b>,<br> а також оберiть <b>операцiю</b> яку Вам потрiбно виконати</p>    
+                <div class = "box">  
+                    <label class = "Labels"><b>Оберiть операцiю:</b></label>
+                    <select class="sign" id="sign">
+                        <option value="sum">+</option>
+                        <option value="difference">-</option>
+                        <option value="multiplication">*</option>
+                        <option value="division">/</option>
+                    </select> 
+                </div>
+               <div class = "input_fields">
+                    <label class="Labels"><b>Num1:</b></label>
+                    <input type = "text" class="inputs" id="Num1" required>
+                    <br>
+                    <label class="Labels"><b>Num2:</b></label>
+                    <input type = "text" class="inputs" id="Num2" required> 
+               </div> 
+                <br><hr>  
+               <input class = "button" type="submit" value="Порахувати">
+               <br><hr>
+               <p class = "Labels"><b>Результат обрахунку (цiле число):</b></p>         
+               <span id = "message" class = "answer"></span>
+            </div>           
+        </form>
+        <script src="./index.js"></script>
+    </body>
+</html>
